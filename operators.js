@@ -21,5 +21,13 @@ console.log("Logical Operator && Output:",aL&&bL)
 console.log("Logical Operator || Output:",aL||bL)
 console.log("Logical Operator ! Output:",!aL)
 
-
+//Relational Operators -> <,>,<=,>=,===,!== => Output => True or False
+aR=20
+bR=30
+console.log("Relational Operator > is:",aR > bR)
+console.log("Relational Operator < is:",aR < bR)
+console.log("Relational Operator >= is:",aR >= bR)
+console.log("Relational Operator < is:",aR <= bR)
+console.log("Relational Operator === is:",aR === bR)
+console.log("Relational Operator !== is:",aR !== bR)
 
