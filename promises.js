@@ -1,6 +1,6 @@
 //PROMISES
 //Ex : 1
-/*function isAuthenticated() {
+function isAuthenticated() {
   return Math.random() > 1;   // not success if symbol is < then it will be success
 }
 function Login() {
@@ -78,28 +78,8 @@ location()
   })
   .catch(function(response){
     console.log(response);
-  });*/
+  });
   
-  // Using Arrow functions
+  
 
-  var isAuthenticated=() => {
-    return Math.random() > 1;   // not success if symbol is < then it will be success
-  }
-  var Login=()=> {
-    return new Promise(function (response, noresponse) {
-      setTimeout(()=> {
-        if (isAuthenticated()) {
-          response("Your Authentication is Successful");
-        } else {
-          noresponse("Your Authentication is not Successful");
-        }
-      }, 1000);
-    });
-  }
-  Login()
-    .then((message)=> {
-      console.log(message);
-    })
-    .catch((message)=> {
-      console.log(message);
-    });
+ 

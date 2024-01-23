@@ -7,7 +7,7 @@ var fun = () => {
 }
 fun()
 
-//3.Destructring Operator -> we need to put square bracket1
+//3.Destructring Operator -> we need to put square bracket otherwise output will be undefined
 
 
 var arr = [1,2,3,4,5]
