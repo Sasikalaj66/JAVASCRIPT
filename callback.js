@@ -27,3 +27,18 @@ function varshan(){
 }
 sasi("Hello sasikala\nWelcome to KEC",varshan)
 
+//Ex:3
+function SubmitForm(buttonclicked,db){
+    setTimeout(function()
+    {
+      console.log(buttonclicked)
+      db();
+    },2000)
+  }
+  function db(){
+    console.log("Form submitted successfully and stored")
+  }
+  
+    SubmitForm("Form Submit button clicked",db)
+  
+
