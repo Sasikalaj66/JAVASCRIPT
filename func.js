@@ -32,6 +32,6 @@ function fun(a,b)
     
     return (a)
  }
- fun(6)
+ console.log(fun(6))
 
  

@@ -78,19 +78,43 @@ async function likeCode(){
     )
 
 }
+async function shareCode(){
+    return new Promise(
+        function(shareValue){
+            setTimeout(function () {
+                shareValue("This my 1st post's Share icon")
+            }, 1000);
+
+        }
+    )
+
+}
+async function saveCode(){
+    return new Promise(
+        function(saveValue){
+            setTimeout(function () {
+                saveValue("This my 1st post's Save icon")
+            }, 1000);
+
+        }
+    )
+
+}
 
 async function post() {
     var post = new Promise(
         function (postResponse) {
             setTimeout(function () {
-                postResponse("This my 1st post")
+                postResponse("This my 1st post in Instagram")
             }, 1000);
         }
     );
-    var [feed,comment,like]=await Promise.all([post,commentCode(),likeCode()])
+    var [feed,comment,like,share,save]=await Promise.all([post,commentCode(),likeCode(),shareCode(),saveCode()])
     
     console.log(feed);
     console.log(comment);
     console.log(like)
+    console.log(share)
+    console.log(save)
 }
 post()

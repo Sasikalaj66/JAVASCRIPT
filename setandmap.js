@@ -53,5 +53,7 @@ console.log(mapExample.has("name"))
 mapExample.set("age","22");
 mapExample.set("Mobile","6986765889")
 console.log(mapExample)
+
+//To delete
 mapExample.delete("Mobile","6986765889")
 console.log(mapExample)                                                                                                                                      
